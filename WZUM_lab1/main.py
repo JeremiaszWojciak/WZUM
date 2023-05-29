@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 
 # TODO 2 ---------------------------------------------------------------------------------------------------------------
 
-def zad_2():
+def ex_2():
     digits = datasets.load_digits()
     # print(digits)
     print(f'DESCR:\n, {digits.DESCR}')
@@ -30,7 +30,7 @@ def zad_2():
 
 # TODO 3 ---------------------------------------------------------------------------------------------------------------
 
-def zad_3():
+def ex_3():
     digits = datasets.load_digits()
     X, y = digits.data, digits.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -41,7 +41,7 @@ def zad_3():
 
 # TODO 4 ---------------------------------------------------------------------------------------------------------------
 
-def zad_4():
+def ex_4():
     faces = datasets.fetch_olivetti_faces()
     # alternative:
     #  X, y = datasets.fetch_olivetti_faces(return_X_y=True)
@@ -75,7 +75,7 @@ def zad_4():
 
 # TODO 5 ---------------------------------------------------------------------------------------------------------------
 
-def zad_5():
+def ex_5():
     irises = datasets.load_iris()
     # print(irises)
 
@@ -112,7 +112,7 @@ def zad_5():
 
 # TODO 6 ---------------------------------------------------------------------------------------------------------------
 
-def zad_6():
+def ex_6():
     m_class = datasets.make_classification(n_samples=50, n_features=2, n_informative=2, n_redundant=0, n_classes=2,
                                            n_clusters_per_class=1)
     print(m_class)
@@ -124,7 +124,7 @@ def zad_6():
 
 # TODO 7 ---------------------------------------------------------------------------------------------------------------
 
-def zad_7():
+def ex_7():
     credit = datasets.fetch_openml(data_id=31)
     print(credit)
     print(type(credit.data))
@@ -135,7 +135,7 @@ def zad_7():
 
 # TODO 8 ---------------------------------------------------------------------------------------------------------------
 
-def zad_8():
+def ex_8():
     df = pd.read_csv('trainingdata.txt', header=None)
     print(df)
     plt.scatter(df[0], df[1])
@@ -145,9 +145,9 @@ def zad_8():
     print(len(X_train), len(X_test))
 
 
-# TODO Bramki logiczne -------------------------------------------------------------------------------------------------
+# TODO Logic gates -----------------------------------------------------------------------------------------------------
 
-def zad_bramki():
+def ex_gates():
     X = [[0, 0],
          [0, 1],
          [1, 0],
@@ -161,7 +161,7 @@ def zad_bramki():
 
 # TODO 9 AND 10 --------------------------------------------------------------------------------------------------------
 
-def zad_9_10():
+def ex_9_10():
     X = [[0, 0],
          [0, 1],
          [1, 0],
@@ -180,4 +180,4 @@ def zad_9_10():
 
 
 if __name__ == '__main__':
-    zad_9_10()
+    ex_9_10()
