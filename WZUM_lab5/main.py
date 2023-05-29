@@ -53,7 +53,7 @@ def fill_age(x):
     return x
 
 
-def zad_1_11():
+def ex_1_11():
     titanic = datasets.fetch_openml(name='Titanic', version=1, parser='auto')
     X, y = titanic.data, titanic.target
     # print(X)
@@ -151,7 +151,7 @@ def zad_1_11():
 
 # TODO FINAL SOLUTION --------------------------------------------------------------------------------------------------
 
-def zad_final():
+def ex_final():
     titanic = datasets.fetch_openml(name='Titanic', version=1, parser='auto')
     X, y = titanic.data, titanic.target
 
@@ -289,4 +289,4 @@ def zad_final():
 
 
 if __name__ == '__main__':
-    zad_final()
+    ex_final()
