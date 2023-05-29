@@ -10,7 +10,7 @@ from mlflow.entities import ViewType
 
 # TODO 2 ---------------------------------------------------------------------------------------------------------------
 
-def zad_2_1():
+def ex_2_1():
     mlflow.autolog()
 
     db = datasets.load_diabetes()
@@ -25,7 +25,7 @@ def zad_2_1():
     print(predictions)
 
 
-def zad_2_2():
+def ex_2_2():
     db = datasets.load_diabetes()
     X_train, X_test, y_train, y_test = train_test_split(db.data, db.target)
 
@@ -36,7 +36,7 @@ def zad_2_2():
 
 # TODO 3 AND 4 ---------------------------------------------------------------------------------------------------------
 
-def zad_3_4():
+def ex_3_4():
     mlflow.set_experiment('my_experiment')
     mlflow.autolog()
 
@@ -61,7 +61,7 @@ def zad_3_4():
 
 # attributes.status = "FINISHED" and metrics.mean_squared_error > 0.060
 
-def zad_5():
+def ex_5():
     run = MlflowClient().search_runs(
         experiment_ids=["707270387100777013"],
         order_by=["metrics.mean_squared_error DESC"],
@@ -77,5 +77,5 @@ def zad_5():
 
 
 if __name__ == '__main__':
-    zad_5()
+    ex_5()
 
