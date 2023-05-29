@@ -20,7 +20,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # TODO 1 ---------------------------------------------------------------------------------------------------------------
 
-def zad_1():
+def ex_1():
     diabetes = datasets.fetch_openml(data_id=37, parser='auto')
     X, y = diabetes.data, diabetes.target
     # print(X)
@@ -82,7 +82,7 @@ def zad_1():
 
 
 # TODO 2 ---------------------------------------------------------------------------------------------------------------
-def zad_2():
+def ex_2():
     diabetes = datasets.fetch_openml(data_id=37, parser='auto')
     X, y = diabetes.data, diabetes.target
 
@@ -106,7 +106,7 @@ def zad_2():
 
 # TODO 3 AND 4 ---------------------------------------------------------------------------------------------------------
 
-def zad_3_4():
+def ex_3_4():
     diabetes = datasets.fetch_openml(data_id=37, parser='auto')
     X, y = diabetes.data, diabetes.target
 
@@ -133,7 +133,7 @@ def zad_3_4():
 
 # TODO 5 ---------------------------------------------------------------------------------------------------------------
 
-def zad_5():
+def ex_5():
     diabetes = datasets.fetch_openml(data_id=37, parser='auto')
     X, y = diabetes.data, diabetes.target
 
@@ -189,13 +189,13 @@ def zad_5():
 
 # TODO 6 ---------------------------------------------------------------------------------------------------------------
 
-def zad_6():
+def ex_6():
     pass
 
 
 # TODO 7 ---------------------------------------------------------------------------------------------------------------
 
-def zad_7():
+def ex_7():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -253,7 +253,7 @@ def zad_7():
 
 # TODO 8 ---------------------------------------------------------------------------------------------------------------
 
-def zad_8():
+def ex_8():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -277,7 +277,7 @@ def zad_8():
 
 # TODO 9 ---------------------------------------------------------------------------------------------------------------
 
-def zad_9():
+def ex_9():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -289,7 +289,7 @@ def zad_9():
 
 # TODO 10 --------------------------------------------------------------------------------------------------------------
 
-def zad_10():
+def ex_10():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.03, random_state=42, stratify=y)
@@ -329,13 +329,13 @@ def zad_10():
 
 # TODO 11 --------------------------------------------------------------------------------------------------------------
 
-def zad_11():
+def ex_11():
     pass
 
 
 # TODO 12 --------------------------------------------------------------------------------------------------------------
 
-def zad_12():
+def ex_12():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -354,7 +354,7 @@ def zad_12():
 
 # TODO 13 --------------------------------------------------------------------------------------------------------------
 
-def zad_13():
+def ex_13():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -379,4 +379,4 @@ def zad_13():
 
 
 if __name__ == '__main__':
-    zad_13()
+    ex_13()
