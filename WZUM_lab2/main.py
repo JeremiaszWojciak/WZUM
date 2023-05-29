@@ -15,7 +15,7 @@ from sklearn import pipeline
 
 # TODO 1 ---------------------------------------------------------------------------------------------------------------
 
-def zad_1():
+def ex_1():
     digits = datasets.load_digits()
     X, y = digits.data, digits.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -29,7 +29,7 @@ def zad_1():
 
 # TODO 2 ---------------------------------------------------------------------------------------------------------------
 
-def zad_2_1():
+def ex_2_1():
     irises = datasets.load_iris()
 
     X, y = irises.data, irises.target
@@ -43,7 +43,7 @@ def zad_2_1():
     print(clf.score(X_test, y_test))
 
 
-def zad_2_2():
+def ex_2_2():
     m_class = datasets.make_classification(n_samples=50, n_features=2, n_informative=2, n_redundant=0, n_classes=2,
                                            n_clusters_per_class=1)
 
@@ -60,7 +60,7 @@ def zad_2_2():
 
 # TODO 3 ---------------------------------------------------------------------------------------------------------------
 
-def zad_3():
+def ex_3():
     mydataset = pd.read_csv('mydataset.txt')
 
     enc = OrdinalEncoder()
@@ -87,7 +87,7 @@ def zad_3():
 
 # TODO 4 ---------------------------------------------------------------------------------------------------------------
 
-def zad_4():
+def ex_4():
     digits = datasets.load_digits()
 
     X, y = digits.data, digits.target
@@ -124,7 +124,7 @@ def zad_4():
 
 # TODO 5 ---------------------------------------------------------------------------------------------------------------
 
-def zad_5():
+def ex_5():
     df = pd.read_csv('trainingdata.txt', header=None)
     # plt.scatter(df[0], df[1])
     # plt.show()
@@ -146,7 +146,7 @@ def zad_5():
 
 # TODO 6 ---------------------------------------------------------------------------------------------------------------
 
-def zad_6():
+def ex_6():
     df = pd.read_csv('trainingdata.txt', header=None)
 
     X, y = df[0].values.reshape(-1, 1), df[1].values
@@ -192,4 +192,4 @@ def zad_6():
 
 
 if __name__ == '__main__':
-    zad_6()
+    ex_6()
