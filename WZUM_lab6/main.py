@@ -77,5 +77,5 @@ def zad_5():
 
 
 if __name__ == '__main__':
-    zad_5()
+    zad_3_4()
 
