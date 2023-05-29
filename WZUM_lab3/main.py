@@ -4,6 +4,7 @@ import statistics
 import json
 from matplotlib import pyplot as plt
 from matplotlib.colors import ListedColormap
+from mlxtend.plotting import plot_decision_regions
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
@@ -13,12 +14,11 @@ from sklearn import datasets
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, PolynomialFeatures
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
-from mlxtend.plotting import plot_decision_regions
 
 
 # TODO 1 ---------------------------------------------------------------------------------------------------------------
 
-def zad_1():
+def ex_1():
     df = pd.read_csv('trainingdata.txt', header=None)
     print(df)
 
@@ -86,7 +86,7 @@ def zad_1():
 
 # TODO 2 AND 3 AND 4 AND 5 AND 6 ---------------------------------------------------------------------------------------
 
-def zad_2_3_4_5_6():
+def ex_2_3_4_5_6():
     irises = datasets.load_iris(as_frame=True)
     print(irises.frame.describe())
 
@@ -133,7 +133,7 @@ def zad_2_3_4_5_6():
 
 # TODO 7 ---------------------------------------------------------------------------------------------------------------
 
-def zad_7():
+def ex_7():
     irises = datasets.load_iris(as_frame=True)
 
     X, y = irises.data, irises.target
@@ -178,7 +178,7 @@ def zad_7():
 
 # TODO 8 ---------------------------------------------------------------------------------------------------------------
 
-def zad_8():
+def ex_8():
     irises = datasets.load_iris(as_frame=True)
     X, y = irises.data, irises.target
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -205,7 +205,7 @@ def zad_8():
 
 # TODO 9 ---------------------------------------------------------------------------------------------------------------
 
-def zad_9():
+def ex_9():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X = X[:, [0, 1]]
@@ -253,7 +253,7 @@ def zad_9():
 
 # TODO 10 AND 11 -------------------------------------------------------------------------------------------------------
 
-def zad_10_11():
+def ex_10_11():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     X = X[:, [0, 1]]
@@ -317,7 +317,7 @@ def zad_10_11():
 
 # TODO 12 --------------------------------------------------------------------------------------------------------------
 
-def zad_12():
+def ex_12():
     irises = datasets.load_iris()
     X, y = irises.data, irises.target
     # X = X[:, [0, 1]]
@@ -346,4 +346,4 @@ def zad_12():
 
 
 if __name__ == '__main__':
-    zad_12()
+    ex_12()
