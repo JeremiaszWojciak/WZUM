@@ -222,7 +222,7 @@ def ex_7():
     # GridSearch DecisionTreeClassifier
     parameters = {
         'criterion': ['gini', 'entropy', 'log_loss'],
-        'min_samples_split': [1, 2, 3],
+        'min_samples_split': [2, 3, 4],
     }
 
     clf = GridSearchCV(DecisionTreeClassifier(), parameters, cv=10)
